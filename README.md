@@ -30,4 +30,8 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 - We generate the Project using CDS Iit command
 - Once project structure generated we add the Data Mode, CSV Data, Services
 - Then we check the application is working as expected or not.
-- Then we add the GraphQL in our project to do so we use npm add graphql express-graphql @graphql-tools/schema command to add necessary dependency.
+- Then we add the GraphQL in our project to do so we use npm install @sap/cds-graphql command to add necessary dependency.
+- Then we add `"plugins": [ "@sap/cds-graphql" ]` into the `package.json` file
+- More details can be found in https://www.npmjs.com/package/@sap/cds-graphql?activeTab=readme
+- Then we will use `cds watch` command to run the service.
+- Then in the browser if we navigate to `http://localhost:4004/graphql` then we will see the graphql console.
