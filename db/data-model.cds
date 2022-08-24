@@ -10,13 +10,16 @@ context EmployeeApp {
         empAddress_ID : UUID;
         empAddress    : Association to many EmployeeAddress
                           on empAddress_ID = empAddress.ID;
+        empSalary_ID  : UUID;
+        empSalary     : Association to many EmployeeSalary
+                          on empSalary_ID = empSalary.ID
   }
 
   entity EmployeeAddress {
     key ID       : UUID;
         city     : String;
         address1 : String;
-        Flatno   : String;
+        flatno   : String;
         address2 : String;
         state    : String;
         country  : String;
